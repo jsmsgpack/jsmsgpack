@@ -14,3 +14,11 @@ flamegraph.html
 
 # jsfuzz
 corpus/
+
+package-lock.json
+yarn.lock
+pnpm-lock.yaml
+deno.lock
+
+.idea
+.vscode

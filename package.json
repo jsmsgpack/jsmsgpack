@@ -1,6 +1,6 @@
 {
-  "name": "@msgpack/msgpack",
-  "version": "3.0.0-beta2",
+  "name": "jsmsgpack",
+  "version": "3.0.0-beta3",
   "description": "MessagePack for ECMA-262/JavaScript/TypeScript",
   "author": "The MessagePack community",
   "license": "ISC",
@@ -35,10 +35,10 @@
   "homepage": "https://msgpack.org/",
   "repository": {
     "type": "git",
-    "url": "https://github.com/msgpack/msgpack-javascript.git"
+    "url": "https://github.com/wangxm345566462/msgpack-javascript.git"
   },
   "bugs": {
-    "url": "https://github.com/msgpack/msgpack-javascript/issues"
+    "url": "https://github.com/wangxm345566462/msgpack-javascript/issues"
   },
   "keywords": [
     "msgpack",
