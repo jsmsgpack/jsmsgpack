@@ -67,7 +67,7 @@ const STATE_MAP_VALUE = "map_value";
 type MapKeyType = string | number;
 
 const isValidMapKeyType = (key: unknown): key is MapKeyType => {
-  return typeof key === "string" || typeof key === "number";
+  return typeof key === "string" || typeof key === "number" || typeof key === "bigint";
 };
 
 type StackMapState = {
