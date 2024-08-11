@@ -12,5 +12,15 @@ describe("encode", () => {
             assert.deepStrictEqual(source, decoded);
         });
 
+        it("encodes numbers in bigInt without useBigInt64", () => {
+            const source = {
+                foo: new Date().getTime()
+            };
+            const encoded = encode(source, {useBigInt64: true})
+            const encoded2 = encode(source, {useBigInt64: false});
+            assert.deepStrictEqual(encoded, encoded2);
+        });
+
+
     });
 });

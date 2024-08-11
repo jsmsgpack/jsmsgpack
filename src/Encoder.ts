@@ -200,7 +200,7 @@ export class Encoder<ContextType = undefined> {
           // uint 32
           this.writeU8(0xce);
           this.writeU32(object);
-        } else if (!this.useBigInt64) {
+        } else if (object < Number.MAX_SAFE_INTEGER) {
           // uint 64
           this.writeU8(0xcf);
           this.writeU64(object);
@@ -223,7 +223,7 @@ export class Encoder<ContextType = undefined> {
           // int 32
           this.writeU8(0xd2);
           this.writeI32(object);
-        } else if (!this.useBigInt64) {
+        } else if (object > Number.MIN_SAFE_INTEGER) {
           // int 64
           this.writeU8(0xd3);
           this.writeI64(object);
